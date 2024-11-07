@@ -106,4 +106,46 @@ Vout_min = 0.0465\
 </p>
 
 The Vth is 0.9V at the specified length and width of nmos and pmos
+## Installation
+Tools used and step to reproduce all waveforms
 
+The circuit is designed with Xschem and simulated using Ngspice.
+
+For Video Installation of Xschem, Skywater 130nm pdk and Ngspice and other open source tools, refer to this video [Video_link](https://www.youtube.com/watch?v=jEGq7JVHGvQ)
+### For Ubuntu:
+#### Xschem:
+Xschem is an open-source schematic capture tool used for designing electronic circuits. It is popular in the VLSI design community for its intuitive interface and extensive compatibility with circuit simulation tools like ngspice. Xschem supports hierarchical designs, allowing designers to create complex circuits from simpler building blocks. It’s particularly useful for designing and simulating analog, digital, and mixed-signal circuits.
+
+Open your terminal and type the following to install Xschem
+```bash
+  git clone https://github.com/StefanSchippers/xschem.git xschem
+  cd xschem/
+  ./configure
+  make
+  sudo make install
+```
+To open Xschem:
+```bash
+  xschem
+```
+#### Ngspice:
+
+Ngspice is an open-source, mixed-level/mixed-signal electronic circuit simulator based on SPICE (Simulation Program with Integrated Circuit Emphasis). It’s widely used for simulating analog, digital, and RF circuits, supporting a range of analyses like DC, AC, transient, and noise analysis.
+
+Open your terminal and type the following to install Ngspice
+```bash
+  git clone https://git.code.sf.net/p/ngspice/ngspice ngspice_git
+  ls
+  cd ngspice_git/
+  mkdir release
+  ./autogen.sh
+  cd release
+  cd ../
+  sudo apt-get install adms -y
+  cd release/
+  ../configure --with-x --enable-xspice --disable-debug --enable-cider --with-readline=yes --enable-openmp --enable-osdi --enable-adms
+  make
+  sudo make install
+  sudo apt-get install netgen-lvs -y
+```
+    
