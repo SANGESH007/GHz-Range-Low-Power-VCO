@@ -7,10 +7,15 @@ This project simulates the designed Voltage controlled oscillator circuit to det
 Voltage Controlled Oscillator is one of the crucial component in communication systems. This paper discusses the design of a low-power VCO tailored for GHz frequency applications. The VCO is developed using CMOS technology and the Sky water 130nm PDK. This VCO operates within a wide voltage range and delivers an output frequency of 4-6 GHz and the designed VCO is expected to consume less than 1mW power at 1.8 V. This low power consumption makes the VCO suitable for applications such as IoT and battery-operated wireless systems, where energy efficiency is essential.
 
 ## Block Diagram of the VCO IP
-![blackbox](https://github.com/user-attachments/assets/d0f7a998-d449-4df0-84bf-1046016c048c)
+ <p align="center">
+  <img width="800" height="600" src="/Images/blackbox.png">
+</p>
 
 ## Circuit Diagram of the VCO IP
-![circuit](https://github.com/user-attachments/assets/f559013b-af7b-4255-b2ba-be5bd3b70682)
+ <p align="center">
+  <img width="1000" height="600" src="/Images/circuit.png">
+</p>
+
 # Specifications
 
 | Parameter                   | Symbol | Min Value | Typical Value | Max Value | Unit |
@@ -46,35 +51,59 @@ Voltage Controlled Oscillator is one of the crucial component in communication s
 | 3.4 | 2.8591 | 0.2260 | 3.0851 | 7.008  | 1.04ns | 3.947 |
 
 
-
-
-
 # Pre-Layout Performance characterisitics
 
 ### Transient Response of VCO @ VDD = 1.8V and Vcntrl = 0V
 
-![trans_final](https://github.com/user-attachments/assets/ae46a680-8b4e-486b-bbe8-85dd378c5178)
+ <p align="center">
+  <img width="800" height="600" src="/Images/trans_final.png">
+</p>
+
 Here it is observed that ΔVout = Vout_max - Vout_min\
 Vout_max = 1.8618\
 Vout_min = 0.0465\
 ΔVout = 1.815
+
 ### VDD vs Frequency @ Vcntrl = 0V
-![vdd_vs_frequency](https://github.com/user-attachments/assets/c40ab1d6-fa62-4e07-b023-af8f01732a9a)
+ <p align="center">
+  <img width="1000" height="600" src="/Images/vdd_vs_frequency.png">
+</p>
 
 ### Frequency VS Vcntrl @ VDD = 0V
-![freq_vs_vcntrl](https://github.com/user-attachments/assets/87623541-d4bf-4a8d-a4a4-4669775b0761)
+ <p align="center">
+  <img width="800" height="600" src="/Images/freq_vs_vcntrl.png">
+</p>
+
 ### Frequency VS Power @ Vcntrl = 0V
-![freq_vs_power](https://github.com/user-attachments/assets/73f6c411-4c56-4a38-89d6-0d581d58416b)
+ <p align="center">
+  <img width="800" height="600" src="/Images/freq_vs_power.png">
+</p>
+
 `Average Power = (1/T) ∫[0 to T] V(t) * I(t) dt` 
 ### FFT of Vout @ VDD = 1.6V and Vcntrl = 0v, Window - Hanning
-![fft_1_6v](https://github.com/user-attachments/assets/adabedd7-98ab-4ffe-93dc-629162a837a4)
+ <p align="center">
+  <img width="800" height="600" src="/Images/fft_1_6v.png">
+</p>
+
 ### FFT of Vout @ VDD = 1.8V and Vcntrl = 0v, Window - Hanning
-![fft_1_8v](https://github.com/user-attachments/assets/9afc9778-2ab9-427f-8dcd-78fb82a62486)
+ <p align="center">
+  <img width="800" height="600" src="/Images/fft_1_8v.png">
+</p>
+
 ### FFT of Vout @ VDD = 2.3V and Vcntrl = 0v, Window - Hanning
-![fft_2_3v](https://github.com/user-attachments/assets/4474d0e5-bb4a-4489-b344-f46925520e5d)
+ <p align="center">
+  <img width="800" height="600" src="/Images/fft_2_3v.png">
+</p>
+
 ### Inverter circuit
-![inverter_cir](https://github.com/user-attachments/assets/67039c42-5265-430d-b9e4-00043150ff9a)
+ <p align="center">
+  <img width="1000" height="600" src="/Images/inverter_cir.png">
+</p>
+
 ### Symmetric inverter VTC curve @VDD = 1.8V and Vin = 1.8V
-![inv](https://github.com/user-attachments/assets/65504d93-9b49-4bf5-a0bb-433aaa6e8ada)\
+ <p align="center">
+  <img width="800" height="600" src="/Images/inv.png">
+</p>
+
 The Vth is 0.9V at the specified length and width of nmos and pmos
 
