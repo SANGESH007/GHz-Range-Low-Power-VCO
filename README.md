@@ -256,3 +256,30 @@ Note: Make sure to install the Python3 and the following libraries to plot the u
   <img width="800" height="600" src="/Images/freq_vs_power.png">
 </p>
     
+***************
+
+
+
+## Future Work
+
+
+
+## Contributors 
+
+- **SANGESH S**  
+
+## Acknowledgments
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Arun Kr. Chatterjee, Assistant Professor, Thapar Institute of Engineering and Technology, Patiala, India
+- Dr. Rishikesh Pandey, Assistant Professor, Thapar Institute of Engineering and Technology, Patiala, India
+- Sumanto Kar, Assistant Project Manager, FOSSEE, IITB, India
+
+## Contact Information
+
+- Sangesh S, Postgraduate Student, Thapar Institute of Engineering and Technology sksangesh@gmail.com
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+- Arun Kr. Chatterjee, Assistant Professor, Thapar Institute of Engineering and Technology  arun.chatterjee@thapar.edu
+- Dr. Rishikesh Pandey, Assistant Professor, Thapar Institute of Engineering and Technology rpandey@thapar.edu
+- Sumanto Kar, Assistant Project Manager, FOSSEE, IITB JEETSUMANTO123@GMAIL.COM
