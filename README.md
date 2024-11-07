@@ -52,6 +52,7 @@ Voltage Controlled Oscillator is one of the crucial component in communication s
 # Pre-Layout Performance characterisitics
 
 ### Transient Response of VCO @ VDD = 1.8V and Vcntrl = 0V
+
 ![trans_final](https://github.com/user-attachments/assets/ae46a680-8b4e-486b-bbe8-85dd378c5178)
 Here it is observed that ΔVout = Vout_max - Vout_min\
 Vout_max = 1.8618\
