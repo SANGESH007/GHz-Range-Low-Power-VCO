@@ -148,4 +148,111 @@ Open your terminal and type the following to install Ngspice
   sudo make install
   sudo apt-get install netgen-lvs -y
 ```
+## Running The simulation
+To run this file make sure you have installed the Skywater 130nm pdk
+
+To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
+
+```bash
+  git clone https://github.com/SANGESH007/GHz-Range-Low-Power-VCO.git
+  cd GHz-Range-Low-Power-VCO/Simulation/
+```
+After clonning the repository, To obtain the plots type the following commands in the terminal
+
+Note: Before running the .spice files, change the pdk directory according to your pdk location in your PC for all the spice files\
+From this to:
+```bash
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+```
+Where the PDK file is located
+```bash
+** opencircuitdesign pdks install
+.lib <location of the pdk directory in your PC> tt
+```
+## To obtain Transient Response of VCO @ VDD = 1.8V and Vcntrl = 0V
+Run the netlist file using the following command
+```bash
+  ngspice Trans_analsysis_1_8.spice
+```
+<p align="center">
+  <img width="800" height="600" src="/Images/trans_final.png">
+</p>
+
+<b>
+To find the parameters such as frequency, average power, ΔVout, Vout_min, Vout_max\
+Change the VDD and the Vcntrl in this "Trans_analsysis_1_8.spice" file and run. You can able to see the parameters
+</b>
+
+You can exit from the Ngspice Shell by typing:
+```bash
+  exit
+```
+## To obtain the FFT of Vout @ VDD = 1.6V and Vcntrl = 0v, Window - Hanning
+Run the netlist file using the following command
+```bash
+  ngspice fft_1_6.spice
+```
+ <p align="center">
+  <img width="800" height="600" src="/Images/fft_1_6v.png">
+</p>
+
+## To obtain the FFT of Vout @ VDD = 1.8V and Vcntrl = 0v, Window - Hanning
+Run the netlist file using the following command
+```bash
+  ngspice fft_1_8.spice
+```
+ <p align="center">
+  <img width="800" height="600" src="/Images/fft_1_8v.png">
+</p>
+
+## To obtain the FFT of Vout @ VDD = 2.3V and Vcntrl = 0v, Window - Hanning
+Run the netlist file using the following command
+```bash
+  ngspice fft_2_3.spice
+```
+ <p align="center">
+  <img width="800" height="600" src="/Images/fft_2_3v.png">
+</p>
+
+## To obtain the Symmetric inverter VTC curve @VDD = 1.8V and Vin = 1.8V
+```bash
+  ngspice inverter_vtc.spice
+```
+
+<p align="center">
+  <img width="800" height="600" src="/Images/inv.png">
+</p>
+
+Note: Make sure to install the Python3 and the following libraries to plot the upcomming graphs:
+```bash
+  pip install numpy
+  pip install matplotlib
+  pip install scipy
+```
+## To obtain the VDD vs Frequency @ Vcntrl = 0V
+```bash
+  cd ../
+  cd Plotting_scripts/
+  python3 vdd_vs_frequency_1.py
+```
+ <p align="center">
+  <img width="1000" height="600" src="/Images/vdd_vs_frequency.png">
+</p>
+
+## To obtain the Frequency VS Vcntrl @ VDD = 0V
+```bash
+  python3 freq_vs_cntrl_1.py
+```
+ <p align="center">
+  <img width="800" height="600" src="/Images/freq_vs_vcntrl.png">
+</p>
+
+## To obtain the Frequency VS Power @ Vcntrl = 0V
+```bash
+  python3 freq_vs_power.py
+```
+<p align="center">
+  <img width="800" height="600" src="/Images/freq_vs_power.png">
+</p>
     
