@@ -2,9 +2,32 @@
 
 This project simulates the designed Voltage controlled oscillator circuit to determine its performance characterisitics for pre-layout 
 
+# Table of Contents 
+
+ * [A-Glance-at-the-VCO-IP](#A-Glance-at-the-VCO-IP)
+ * [Block-Diagram-of-the-VCO-IP](#Block-Diagram-of-the-VCO-IP)
+ * [Circuit-Diagram-of-the-VCO-IP](#Circuit-Diagram-of-the-VCO-IP)
+ * [Specifications](#Specifications)
+ * [VCO-Performance-Parameters](#VCO-Performance-parameters)
+ * [Pre-Layout-Performance-Characteristics](#Pre-Layout-Performance-Characteristics)
+ * [Installation](#Installation)
+   * [Xschem](#Xschem)
+   * [Ngspice](#Ngspice)
+ * [Running-The-Simulations](#Running-The-Simulations)
+ * [To-Obtain-the-Plots](#To-Obtain-the-Plots)
+ * [Future Work](#Future-work)
+ * [Contributors](#Contributors)
+ * [Acknowledgements](#Acknowledgements)
+ * [Contact-Information](#Contact-Indformation)
+
 ## A Glance at the VCO IP
 
 Voltage Controlled Oscillator is one of the crucial component in communication systems. This paper discusses the design of a low-power VCO tailored for GHz frequency applications. The VCO is developed using CMOS technology and the Sky water 130nm PDK. This VCO operates within a wide voltage range and delivers an output frequency of 4-6 GHz and the designed VCO is expected to consume less than 1mW power at 1.8 V. This low power consumption makes the VCO suitable for applications such as IoT and battery-operated wireless systems, where energy efficiency is essential.
+</br>
+
+*[Back To Top](##A-Glance-at-the-vco-ip)* ⤴️ 
+
+</br>
 
 ## Block Diagram of the VCO IP
  <p align="center">
@@ -170,6 +193,7 @@ Where the PDK file is located
 ** opencircuitdesign pdks install
 .lib <location of the pdk directory in your PC> tt
 ```
+# To Obtain the Plots
 ## To obtain Transient Response of VCO @ VDD = 1.8V and Vcntrl = 0V
 Run the netlist file using the following command
 ```bash
