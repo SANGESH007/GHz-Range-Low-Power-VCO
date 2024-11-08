@@ -261,7 +261,9 @@ Note: Make sure to install the Python3 and the following libraries to plot the u
 
 
 ## Future Work
-
+- This implemented circuit will perform better when implementer using lower technology nodes such as 45nm, 7nm etc
+- Improving the VCO’s phase noise, power consumption, and frequency tuning range to meet advanced application requirements, such as in RF communications or high-speed data converters.
+- Design compensation techniques to improve VCO stability and performance under temperature and process variations, critical for reliable operation in harsh environments.
 
 
 ## Contributors 
