@@ -13,7 +13,7 @@ This project simulates the designed Voltage controlled oscillator circuit to det
  * [Installation](#Installation)
    * [Xschem](#Xschem)
    * [Ngspice](#Ngspice)
- * [Running-The-Simulations](#Running-The-Simulations)
+ * [Running-The-Simulations](#Running-The-simulation)
  * [To-Obtain-the-Plots](#To-Obtain-the-Plots)
  * [Future Work](#Future-work)
  * [Contributors](#Contributors)
