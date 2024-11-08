@@ -46,7 +46,9 @@ Voltage Controlled Oscillator is one of the crucial component in communication s
 | Output VCO Frequency        | Vout   | 4.10 G    | 4.76 G        | 7 G       | Hz   |
 | Power consumption           | -      | 0.385     | 0.602         | 3.947     | mW   |
 
+
 ## VCO Performance parameters @ Vcntrl = 0v
+
 | VDD |  ΔVout | Vout_min | Vout_max | Frequency(GHz) | Lock time | Power(mW) |
 |   :---:      |     :---:      |   :---:       |    :---:      |    :---:     |    :---:       |    :---:      |
 | 1.6 | 1.6580 | 0.0321 | 1.6901 | 4.104  | 1.35ns | 0.385 |    
