@@ -9,7 +9,7 @@ This project simulates the designed Voltage controlled oscillator circuit to det
  * [Circuit-Diagram-of-the-VCO-IP](#Circuit-Diagram-of-the-VCO-IP)
  * [Specifications](#Specifications)
  * [VCO Performance parameters @ Vcntrl = 0v](#VCO-Performance-parameters-@-Vcntrl-=-0v)
- * [Pre-Layout-Performance-Characteristics](#Pre-Layout-Performance-Characteristics)
+ * [Pre-Layout-Performance-Characteristics](#Pre-Layout-Performance-characterisitics)
  * [Installation](#Installation)
    * [Xschem](#Xschem)
    * [Ngspice](#Ngspice)
@@ -17,17 +17,13 @@ This project simulates the designed Voltage controlled oscillator circuit to det
  * [To-Obtain-the-Plots](#To-Obtain-the-Plots)
  * [Future Work](#Future-work)
  * [Contributors](#Contributors)
- * [Acknowledgements](#Acknowledgements)
- * [Contact-Information](#Contact-Indformation)
+ * [Acknowledgements](#Acknowledgments)
+ * [Contact-Information](#Contact-Information)
 
 ## A Glance at the VCO IP
 
 Voltage Controlled Oscillator is one of the crucial component in communication systems. This paper discusses the design of a low-power VCO tailored for GHz frequency applications. The VCO is developed using CMOS technology and the Sky water 130nm PDK. This VCO operates within a wide voltage range and delivers an output frequency of 4-6 GHz and the designed VCO is expected to consume less than 1mW power at 1.8 V. This low power consumption makes the VCO suitable for applications such as IoT and battery-operated wireless systems, where energy efficiency is essential.
-</br>
 
-*[Back To Top](##A-Glance-at-the-vco-ip)* ⤴️ 
-
-</br>
 
 ## Block Diagram of the VCO IP
  <p align="center">
