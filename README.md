@@ -8,7 +8,7 @@ This project simulates the designed Voltage controlled oscillator circuit to det
  * [Block-Diagram-of-the-VCO-IP](#Block-Diagram-of-the-VCO-IP)
  * [Circuit-Diagram-of-the-VCO-IP](#Circuit-Diagram-of-the-VCO-IP)
  * [Specifications](#Specifications)
- * [VCO-Performance-Parameters](#VCO-Performance-parameters-@-Vcntrl-=-0v)
+ * [VCO Performance parameters @ Vcntrl = 0v](#VCO-Performance-parameters-@-Vcntrl-=-0v)
  * [Pre-Layout-Performance-Characteristics](#Pre-Layout-Performance-Characteristics)
  * [Installation](#Installation)
    * [Xschem](#Xschem)
